@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #c5e4e7;
+  font-family: "Space Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40.864px;
+  padding-top: 50px;
+}
+
+.main {
+  background: white;
+  max-width: 375px;
+  border-radius: 25px 25px 0 0;
+}
+
+.first-div {
+  padding: 32px 32px;
+}
+
+.text {
+  color: #5e7a7d;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.bill-input {
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+  background: #f3f9fa;
+  margin-top: 6px;
+  border: none;
+  text-align: right;
+  padding-right: 17px;
+  color: #00474b;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  background-image: url(images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 11px;
+  outline: none;
+}
+
+.bill-input:hover {
+  border: 2px solid #26c2ae;
+}
+
+.bill-input::placeholder {
+  opacity: 0.35;
+}
+
+.bill-dollar {
+  width: 9.84px;
+  height: 15.456px;
+  justify-self: start;
+  margin-left: 19.26px;
+}
+
+.select-tip {
+  margin-top: 32px;
+}
+
+.percent-btn {
+  width: calc(50% - 8px);
+  height: 48px;
+  border-radius: 5px;
+  background: #00474b;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  border: none;
+}
+
+.btn-section {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.custom-input {
+  background: #f3f9fa;
+  border-radius: 5px;
+  width: calc(50% - 8px);
+  height: 48px;
+  color: #00474b;
+  text-align: right;
+  padding-right: 17px;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+}
+
+.custom-input::placeholder {
+  opacity: 0.35;
+}
+
+.number-input {
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+  background: #f3f9fa;
+  margin-top: 6px;
+  border: none;
+  text-align: right;
+  padding-right: 17px;
+  color: #00474b;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  background-image: url(images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 11px;
+  outline: none;
+}
+
+.number-input::placeholder {
+  opacity: 0.35;
+}
+
+.number-input:hover {
+  border: 2px solid #26c2ae;
+}
+
+.second-div {
+  max-width: 327px;
+  background: #00474b;
+  border-radius: 15px;
+  padding: 37px 22px 24px 24px;
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+p {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+}
+
+span {
+  color: #7f9d9f;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+}
+
+.second-div h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 47px;
+  letter-spacing: -0.666667px;
+  color: #26c2ae;
+}
+
+.second-div div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reset {
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+  background: #26c2ae;
+  border: none;
+  color: #00474b;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#validation {
+  display: none;
+  color: #e17457;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  text-align: right;
+}
+
+.error {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+/* Decktop */
+
+@media screen and (min-width: 1440px) {
+  .logo-img {
+    margin-top: 58px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    max-width: 920px;
+    border-radius: 25px;
+    margin-top: 27px;
+  }
+
+  .second-div {
+    max-width: 413px;
+  }
+
+  .first-div {
+    width: 379px;
+    box-sizing: content-box;
+  }
+
+  .percent-btn,
+  .custom-input {
+    width: 117px;
+  }
+
+  .btn-section {
+    gap: 14px;
+  }
+
+  .reset {
+    width: 333px;
+    margin-top: 100px;
+  }
+}
